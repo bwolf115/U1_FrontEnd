@@ -1,0 +1,27 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+#wrapper {
+    display: flex;
+    width: 100%;
+    font-family: 'Manrope', 'Roboto', sans-serif;
+    background-color: #a49b9b5a;
+    align-items: center;
+
+}
+
+#main-wrapper {
+    flex-grow: 1;
+    min-width: 0;
+    background-color: #ffffff; 
+}
+#wrapper_izquierdo {
+    flex-grow: 1;
+    min-width: 0;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 0.5em;
+    max-width: 25%;
+
+}
+.bi {
+    padding: 1em;
+}

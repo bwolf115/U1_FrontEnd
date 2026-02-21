@@ -1,0 +1,47 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+#wrapper {
+    display: flex;
+    width: 100%;
+    font-family: 'Manrope', 'Roboto', sans-serif;
+}
+
+#sidebar-wrapper {
+    width: 25vh;
+    background-color: #015BB2;
+}
+
+
+#sidebar-wrapper .nav-link {
+    color: #ffffffcc; 
+    padding: 1rem 1rem;
+}
+
+#sidebar-wrapper .nav-link:hover {
+    color: #ffffff;
+    background-color: #ffffff1a; 
+}
+
+
+#main-wrapper {
+    flex-grow: 1;
+    min-width: 0;
+    background-color: #f8f9fc; 
+}
+.bi {
+    padding: 1em;
+}
+#card_title {
+    color: #616161;
+    margin-left: 0.5em;
+}
+
+#transacciones {
+    border: none;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 4px #61616176;
+    margin-right: 1em;
+}
+
+#logout a {
+    color: #ffffffcc;
+}
