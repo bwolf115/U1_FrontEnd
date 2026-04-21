@@ -1,15 +1,19 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
 #wrapper {
     display: flex;
     width: 100%;
+    min-height: 100vh;
     font-family: 'Manrope', 'Roboto', sans-serif;
 }
 
+
 #sidebar-wrapper {
-    width: 25vh;
+    width: 240px;   
+    min-width: 200px;
+    min-height: 100vh;
     background-color: #015BB2;
 }
-
 
 #sidebar-wrapper .nav-link {
     color: #ffffffcc; 
@@ -21,18 +25,20 @@
     background-color: #ffffff1a; 
 }
 
-
 #main-wrapper {
     flex-grow: 1;
     min-width: 0;
     background-color: #f8f9fc; 
 }
+
 .bi {
-    padding: 1em;
+    padding: 0.rem;
 }
-#card_title {
-    color: #616161;
-    margin-left: 0.5em;
+
+.card_title {
+    padding-top: 10PX;
+    color: #000000;
+    margin-bottom: 1rem;
 }
 
 #transacciones {

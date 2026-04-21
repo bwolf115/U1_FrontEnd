@@ -4,7 +4,9 @@
         <div class="card-body" >
             <h5 class="card-title">{{$titulo}}</h5>
             <p class="card-text">{{$contenido}}</p>
-            <a href="#" class="btn btn-primary">Revisar</a>
+            <form action="{{ route('admin.reservation') }}" method="GET">
+            <button class="btn btn-primary">Revisar</button>
+            </form>
         </div>
     </div>
 </div>  

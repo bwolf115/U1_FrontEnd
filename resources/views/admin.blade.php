@@ -1,16 +1,16 @@
 @extends('layouts.landing_admin')
 @section('title', 'Panel de Administrador')
 @section('content')
-<div class="d-flex" id="wrapper">  <!-- Para dividir side de header -->
+<div id="wrapper"> 
     @include('layouts._partials.admin_sidebar')
 
-    <div id="main-wrapper"> <!-- Parte mas grande de la pantalla -->
+    <div id="main-wrapper"> 
     @include('layouts._partials.admin_header')
 
-        <div class="container-fluid p-4 pb-0">
+        <div class="container-fluid px-4">
 
-            <h3  id="card_title" >Reservaciones</h3>
-            <div class="container ">
+            <h3  class="card_title" >Reservaciones</h3>
+            
                 <div class="row">    
                     @component ('layouts._components.card')
                     @slot('imagen', asset('assets/img/casa1.webp'))
@@ -31,13 +31,13 @@
                     @endcomponent
                     
                 </div>
-            </div>
+            
         </div>
 
-        <div class="container-fluid p-4 pt-2 pb-0">
+        <div class="container-fluid px-4">
 
-            <h3 id="card_title" >Movimientos</h3>
-            <div class="container p-4 pt-0 ">
+            <h3 class="card_title" >Movimientos</h3>
+           
                 <div class="row">    
                     @component ('layouts._components.transaction')
                     @slot('color', '#23720d')
@@ -50,13 +50,13 @@
                     @endcomponent
                     
                 </div>
-            </div>
+           
         </div>
 
-        <div class="container-fluid p-4 pt-0 ">
+        <div class="container-fluid px-4">
 
-            <h3 id="card_title" >Estadísticas</h3>
-            <div class="container pt-0">
+            <h3 class="card_title" >Estadísticas</h3>
+            
                 <div class="row">    
                     @component ('layouts._components.card')
                     @slot('imagen', asset('assets/img/chart.png'))
@@ -65,7 +65,7 @@
                     @endcomponent
                     
                 </div>
-            </div>
+         
         </div>
 
         
